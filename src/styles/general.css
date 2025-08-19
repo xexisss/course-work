@@ -41,3 +41,80 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+.header {
+    width: 100%;
+    height: 72px;
+    background-color: black;
+}
+  
+  .header__container {
+    max-width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+  }
+  
+  /* Навигация */
+  .header__nav ul {
+    width: 830px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .header__nav a {
+    font-family: "Inter", sans-serif; 
+    font-size: 20px;
+    line-height: 20px;
+    color: white; 
+    text-decoration: none;
+}
+  
+.header__actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+  
+.btn {
+    font-family: "Inter", sans-serif;
+    color: white;
+    background-color: gray;
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+}
+  
+.btn--th {
+    width: 38px;
+    height: 36px;
+    font-size: 16px;
+    line-height: 36px;
+    text-align: center;
+}
+  
+.btn--login {
+    width: 81px;
+    height: 36px;
+    font-size: 16px;
+    line-height: 36px;
+    text-align: center;
+}
+  
+.btn--eng {
+    width: 30px;
+    height: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+}
+  
