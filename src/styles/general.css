@@ -145,17 +145,14 @@ table {
       padding: 0 16px;
     }
   
-    /* Скрываем обычную навигацию */
     .header__nav {
       display: none;
     }
   
-    /* Показываем бургер */
     .header__burger {
       display: flex;
     }
-  
-    /* Всплывающее меню при открытом бургере (добавьте класс .open через JS) */
+
     .header.open .header__nav {
       display: block;
       position: absolute;
@@ -181,7 +178,7 @@ table {
   
     .btn--login,
     .btn--th {
-      display: none; /* скрываем часть кнопок на узких экранах */
+      display: none;
     }
   
     .header__actions {
@@ -191,5 +188,97 @@ table {
 
 /* Footer styles */
 
+.footer {
+    background-color: black;
+}
+  
+.footer__container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) auto;
+    align-items: center;
+    gap: auto;
+    min-height: 256px;
+    padding: 64px 24px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
 
+@media (max-width: 1024px) {
+    .footer__container {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-auto-rows: auto;
+      gap: 24px;
+  
+      padding: 48px 16px;
+      min-height: auto;
+    }
+    
+    .footer__phone {
+      grid-column: 1 / -1;
+      justify-self: center;
+    }
+}
+  
+  
+@media (max-width: 768px) {
+    .footer__container {
+      grid-template-columns: 1fr;
+      grid-auto-rows: auto;
+      gap: 16px;
+  
+      padding: 32px 12px;
+      min-height: auto;
+    }
+  
+    .footer__phone {
+      grid-column: auto;
+      justify-self: start;
+    }
+}
+
+.footer__col {
+    display: flex;
+    flex-direction: column;
+}
+  
+.footer__title {
+    margin: 0 0 16px;
+    font-size: 16px;
+    color: white;
+}
+  
+.footer__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+  
+.footer__list a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+  
+.footer__list a:hover {
+    color: red;
+}
+  
+.footer__phone {
+    align-self: center;
+    justify-self: end;
+    background-color: black;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+  
+.footer__phone:hover {
+    background-color: black;
+}
   
