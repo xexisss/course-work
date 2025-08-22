@@ -1,3 +1,5 @@
+/* Hero styles */
+
 .hero {
     width: 100%;
 }
@@ -83,3 +85,67 @@
       margin-top: 20px;
     }
 }
+
+/* Customer experience styles */
+
+.customer-experience {
+    text-align: center;
+    padding: 60px 20px;
+}
+  
+.customer-experience .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+.ce-title {
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+}
+  
+.ce-desc {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+    color: #555;
+}
+  
+.ce-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-top: 40px;
+    text-align: left;
+}
+  
+.ce-item img {
+    display: block;
+    margin: 0 auto 16px;
+}
+  
+.ce-item-title {
+    font-size: 1.125rem;
+    margin-bottom: 0.5em;
+}
+  
+.ce-item-text {
+    line-height: 1.4;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .ce-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+}
+  
+@media (max-width: 480px) {
+    .ce-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .ce-item {
+      text-align: center;
+    }
+}
+  
