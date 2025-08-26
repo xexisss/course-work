@@ -41,21 +41,34 @@
         </div>
     </header>
 
-    <main class="page-content">
-      <div class="loan-calculator">
-        <h2 class="calculator-title">Loan calculator</h2>
-        <input type="number" class="loan-input" placeholder="Loan amount">
-        <input type="number" class="loan-input" placeholder="Loan term in months">
-  
-        <div class="calc_btn-group">
-          <button type="button" class="btn">Desired Plan</button>
-          <button type="button" class="calc_btn">Calculate</button>
-        </div>
-  
-        <div class="result">
-          <p class="monthly-payment">Monthly payments $999.999</p>
-          <button type="button" class="calc_btn apply">Apply</button>
-        </div>
+    <main class="registration-page">
+      <div class="registration__box">
+        <h1 class="registration__title">Loan Calculator</h1>
+        <form class="registration__form" novalidate>
+          <div class="registration__field">
+            <label for="surname" class="registration__label">Loan amount</label>
+            <input
+              type="text"
+              id="surname"
+              class="registration__input"
+              placeholder="Enter loan amount"
+              required
+            />
+          </div>
+          <div class="registration__field">
+            <label for="surname" class="registration__label">Loan term in month</label>
+            <input
+              type="text"
+              id="surname"
+              class="registration__input"
+              placeholder="Enter loan term in month"
+              required
+            />
+          </div>
+          <button type="" class="registration__button">Desired plan</button>
+          
+          <button type="submit" class="registration__button">Calculate</button>
+        </form>
       </div>
     </main>
 
