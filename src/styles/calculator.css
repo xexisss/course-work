@@ -1,0 +1,86 @@
+
+  .page-content {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+  }
+
+  .calculator-title {
+    margin: 0 0 20px;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    color: #fff;
+  }
+  
+  /* Блок Loan Calculator */
+  .loan-calculator {
+    background-color: #000;
+    color: #fff;
+    width: 736px;
+    height: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .loan-input {
+    display: block;
+    width: 608px;
+    height: 35px;
+    margin: 0 auto 10px;
+    padding: 0 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .calc_btn-group {
+    display: flex;
+    justify-content: space-between;
+    width: 608px;
+    margin: 0 auto 10px;
+  }
+  
+  .calc_btn {
+    width: 286px;
+    height: 35px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .loan-calculator .result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 608px;
+    margin: 0 auto;
+  }
+  
+  .monthly-payment {
+    margin: 0;
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  @media (max-width: 767px) {
+    .loan-calculator {
+      width: 320px;
+      height: 347px;
+    }
+  
+    .loan-input,
+    .loan-calculator .btn-group,
+    .result {
+      width: 280px;
+    }
+  
+    .btn {
+      width: 136px;
+    }
+  }
+  
