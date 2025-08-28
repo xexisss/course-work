@@ -212,7 +212,8 @@
 
 .glance {
     width: 100%;
-    padding: 60px 24px;
+    max-width: 1440px;
+    padding: 60px 0 0 0;
 }
   
 .glance__container {
@@ -294,7 +295,7 @@
   
 .services {
     width: 100%;
-    padding: 60px 24px;
+    padding: 60px 0 0 0;
     text-align: center;
 }
   
@@ -363,7 +364,7 @@
 
 .results {
     width: 100%;
-    padding: 60px 24px;
+    padding: 60px 0 0 0;
     text-align: center;
 }
   
@@ -428,7 +429,7 @@
 
 .newsletter {
     width: 100%;
-    padding: 60px 24px;
+    padding: 60px 0 0 0;
     text-align: center;
     background-color: #f8f8f8;
 }
