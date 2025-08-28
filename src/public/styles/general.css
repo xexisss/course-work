@@ -214,7 +214,7 @@ h1, h2 {
 /* Footer styles */
 
 .footer {
-  background-color: black;
+  background-color: white;
 }
   
 .footer__container {
@@ -283,12 +283,12 @@ h1, h2 {
   
 .footer__list a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 14px;
 }
   
 .footer__list a:hover {
-  color: red;
+  color: #ED017F;
 }
   
 .footer__phone {

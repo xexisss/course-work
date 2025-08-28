@@ -40,18 +40,18 @@
     font-size: 16px;
     line-height: 1;
     border-radius: 4px;
-    border: 1px solid #000;
+    border: 1px solid #ED017F;
     cursor: pointer;
 }
   
 .btn--primary {
-    background-color: #000;
-    color: #fff;
+    background-color: #ED017F;
+    color: white;
 }
 
 .btn--secondary {
-    background-color: #fff;
-    color: #000;
+    background-color: white;
+    color: #ED017F;
 }
 
 .hero__image img {
