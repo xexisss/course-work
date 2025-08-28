@@ -184,6 +184,14 @@
     height: auto;
     object-fit: contain;
 }
+
+.ce-item-text {
+    font-weight: 400;
+}
+
+.ce-desc {
+    font-weight: 400;
+}
   
 
 @media (max-width: 1024px) {
