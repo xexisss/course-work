@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../styles/general.css">
-    <link rel="stylesheet" href="../styles/order.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/login.css">
 </head>
 <body>
     <header class="header">
@@ -41,14 +41,36 @@
         </div>
     </header>
 
-    <main class="registration-page">
-        <div class="registration__box">
-            <h1 class="registration_title">Order</h1>
-            <button type="" class="registration__button">Choose plan</button>
-            <button type="submit" class="registration__button">Calculate</button>
+    <main class="login-page">
+        <div class="login__box">
+          <h1 class="login__title">Login</h1>
+          <form class="login__form">
+            <div class="login__field">
+              <label for="login-email" class="login__label">Email or nickname</label>
+              <input
+                type="text"
+                id="login-email"
+                class="login__input"
+                placeholder="Enter your email or nickname"
+                required
+              />
+            </div>
+    
+            <div class="login__field">
+              <label for="login-password" class="login__label">Password</label>
+              <input
+                type="password"
+                id="login-password"
+                class="login__input"
+                placeholder="Enter your password"
+                required
+              />
+            </div>
+    
+            <button type="submit" class="login__button">Enter</button>
           </form>
         </div>
-      </main>
+    </main>
 
     <footer class="footer">
         <div class="footer__container">

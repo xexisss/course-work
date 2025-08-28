@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../styles/general.css">
-    <link rel="stylesheet" href="../styles/deposit_calculator.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/services.css">
 </head>
 <body>
     <header class="header">
@@ -41,36 +41,31 @@
         </div>
     </header>
 
-    <main class="registration-page">
-      <div class="registration__box">
-        <h1 class="registration__title">Deposit Calculator</h1>
-        <form class="registration__form" novalidate>
-          <div class="registration__field">
-            <label for="surname" class="registration__label">Deposit amount</label>
-            <input
-              type="text"
-              id="surname"
-              class="registration__input"
-              placeholder="Enter loan amount"
-              required
-            />
+    <section class="services">
+        <div class="services__container">
+          <h2 class="services__title">Our Services</h2>
+          <p class="services__desc">Deposits</p>
+      
+          <div class="services__grid">
+            <div class="services__item">
+              <img src="service1.jpg" alt="Service 1">
+              <a href="#" class="services__link">IPDC SAVING SCHEMES</a>
+            </div>
+            <div class="services__item">
+              <img src="service2.jpg" alt="Service 2">
+              <a href="#" class="services__link">IPDC Personal loan</a>
+            </div>
+            <div class="services__item">
+              <img src="service3.jpg" alt="Service 3">
+              <a href="#" class="services__link">IPDC Deposit schemes</a>
+            </div>
+            <div class="services__item">
+              <img src="service4.jpg" alt="Service 4">
+              <a href="#" class="services__link">IPDC auto loan</a>
+            </div>
           </div>
-          <div class="registration__field">
-            <label for="surname" class="registration__label">Loan term in years</label>
-            <input
-              type="text"
-              id="surname"
-              class="registration__input"
-              placeholder="Enter loan term in month"
-              required
-            />
-          </div>
-          <button type="" class="registration__button">Desired plan</button>
-          
-          <button type="submit" class="registration__button">Calculate</button>
-        </form>
-      </div>
-    </main>
+        </div>
+    </section>
 
 
     <footer class="footer">

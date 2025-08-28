@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../styles/general.css">
-    <link rel="stylesheet" href="../styles/loan_calculator.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/profile.css">
 </head>
 <body>
     <header class="header">
@@ -42,36 +42,53 @@
     </header>
 
     <main class="registration-page">
-      <div class="registration__box">
-        <h1 class="registration__title">Loan Calculator</h1>
-        <form class="registration__form" novalidate>
-          <div class="registration__field">
-            <label for="surname" class="registration__label">Loan amount</label>
-            <input
-              type="text"
-              id="surname"
-              class="registration__input"
-              placeholder="Enter loan amount"
-              required
-            />
-          </div>
-          <div class="registration__field">
-            <label for="surname" class="registration__label">Loan term in month</label>
-            <input
-              type="text"
-              id="surname"
-              class="registration__input"
-              placeholder="Enter loan term in month"
-              required
-            />
-          </div>
-          <button type="" class="registration__button">Desired plan</button>
-          
-          <button type="submit" class="registration__button">Calculate</button>
-        </form>
-      </div>
-    </main>
+        <div class="registration__box">
+          <h1 class="registration__title">Профиль</h1>
+          <form class="registration__form" novalidate>
+    
+            <div class="registration__field">
+                <label class="registration__label">Nickname: nickname</label>
+                <label class="registration__label">Nickname: nickname</label>
+                <label class="registration__label">Nickname: nickname</label>
+            </div>
+    
+            <div class="registration__field">
+              <label for="password" class="registration__label">Password*</label>
+              <input
+                type="password"
+                id="password"
+                class="registration__input"
+                placeholder="Create password"
+                required
+              />
+            </div>
+    
+            <div class="registration__field">
+              <label for="password-repeat" class="registration__label">New password*</label>
+              <input
+                type="password"
+                id="password-repeat"
+                class="registration__input"
+                placeholder="Repeat password"
+                required
+              />
+            </div>
 
+            <div class="registration__field">
+                <label for="password-repeat" class="registration__label">Repeat new password*</label>
+                <input
+                  type="password"
+                  id="password-repeat"
+                  class="registration__input"
+                  placeholder="Repeat password"
+                  required
+                />
+              </div>
+    
+            <button type="submit" class="registration__button">Register</button>
+          </form>
+        </div>
+      </main>
 
     <footer class="footer">
         <div class="footer__container">

@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../styles/general.css">
-    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/deposit_calculator.css">
 </head>
 <body>
     <header class="header">
@@ -41,36 +41,37 @@
         </div>
     </header>
 
-    <main class="login-page">
-        <div class="login__box">
-          <h1 class="login__title">Login</h1>
-          <form class="login__form">
-            <div class="login__field">
-              <label for="login-email" class="login__label">Email or nickname</label>
-              <input
-                type="text"
-                id="login-email"
-                class="login__input"
-                placeholder="Enter your email or nickname"
-                required
-              />
-            </div>
-    
-            <div class="login__field">
-              <label for="login-password" class="login__label">Password</label>
-              <input
-                type="password"
-                id="login-password"
-                class="login__input"
-                placeholder="Enter your password"
-                required
-              />
-            </div>
-    
-            <button type="submit" class="login__button">Enter</button>
-          </form>
-        </div>
+    <main class="registration-page">
+      <div class="registration__box">
+        <h1 class="registration__title">Deposit Calculator</h1>
+        <form class="registration__form" novalidate>
+          <div class="registration__field">
+            <label for="surname" class="registration__label">Deposit amount</label>
+            <input
+              type="text"
+              id="surname"
+              class="registration__input"
+              placeholder="Enter loan amount"
+              required
+            />
+          </div>
+          <div class="registration__field">
+            <label for="surname" class="registration__label">Loan term in years</label>
+            <input
+              type="text"
+              id="surname"
+              class="registration__input"
+              placeholder="Enter loan term in month"
+              required
+            />
+          </div>
+          <button type="" class="registration__button">Desired plan</button>
+          
+          <button type="submit" class="registration__button">Calculate</button>
+        </form>
+      </div>
     </main>
+
 
     <footer class="footer">
         <div class="footer__container">
