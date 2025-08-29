@@ -1,11 +1,24 @@
-/* Hero styles */
+/* Variables */
 
-/* * {
-    outline: 1px solid rgba(255,0,0,0.3);
-}*/
+:root {
+    --bg-color: #fff;
+    --text-color: black;
+    --accent-bg-color: rgba(252, 224, 239, 0.2);
+}
+  
+[data-theme="dark"] {
+    --bg-color: rgb(47, 47, 47);
+    --text-color: #fff;
+    --accent-bg-color: #A44979;
+}
+
+/* Hero styles */
 
 .hero {
     width: 100%;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .hero__image img {
@@ -55,12 +68,13 @@
   
 .btn--primary {
     background-color: #ED017F;
-    color: white;
+    color: var(--bg-color);
 }
 
 .btn--secondary {
-    background-color: white;
+    background-color: var(--bg-color);
     color: #ED017F;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .hero__image img {
@@ -108,6 +122,9 @@
     text-align: center;
     padding: 60px 20px;
     font-weight: 700;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
 }
   
 .customer-experience .container {
@@ -124,7 +141,8 @@
     max-width: 600px;
     margin: 0 auto;
     line-height: 1.5;
-    color: #555;
+    color: var(--text-color);
+    opacity: 0.6;
 }
   
 .ce-grid {
@@ -147,7 +165,8 @@
   
 .ce-item-text {
     line-height: 1.4;
-    color: #666;
+    color: var(--text-color);
+    opacity: 0.6;
 }
 
 @media (max-width: 768px) {
@@ -170,7 +189,7 @@
 
 .partners {
     padding: 80px 24px;
-    background-color: rgba(252, 224, 239, 0.2);
+    background-color: var(--accent-bg-color);
     text-align: center;
 }
   
@@ -184,7 +203,7 @@
     text-transform: uppercase;
     letter-spacing: 2.1px;
     margin-bottom: 40px;
-    color: #333333;
+    color: var(--text-color);
 }
   
 .partners__slider {
@@ -236,7 +255,9 @@
 
 .glance {
     width: 100%;
-    max-width: 1440px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
 }
   
 .glance__container {
@@ -259,14 +280,14 @@
 .glance__text {
     font-size: 16px;
     line-height: 1.5;
-    color: #555;
+    color: var(--text-color);
     margin: 0 0 24px;
 }
   
 .btn--read-more {
-    background-color: #fff;
+    background-color: var(--bg-color);
     border: none;
-    color: #000;
+    color: var(--text-color);
     padding: 12px 24px;
     font-size: 16px;
     cursor: pointer;
@@ -320,7 +341,9 @@
     width: 100%;
     padding: 60px 0 0 0;
     text-align: center;
-    background-color: rgba(252, 224, 239, 0.2);
+    background-color: var(--accent-bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
 }
   
 .services__container {
@@ -338,7 +361,8 @@
     max-width: 600px;
     margin: 0 auto 40px;
     line-height: 1.6;
-    color: #555555;
+    color: var(--text-color);
+    opacity: 0.6;
 }
   
 .services__grid {
@@ -366,7 +390,7 @@
     font-size: 21px;
     letter-spacing: 1px;
     line-height: 35px;
-    color: #333333;
+    color: var(--text-color);
     text-decoration: none;
 }
   
@@ -393,6 +417,9 @@
     padding: 60px 0 0 0;
     text-align: center;
     padding-bottom: 100px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
 }
   
 .results__container {
@@ -410,7 +437,8 @@
     max-width: 600px;
     margin: 0 auto 40px;
     line-height: 1.6;
-    color: #555555;
+    color: var(--text-color);
+    opacity: 0.6;
 }
   
 .results__grid {
@@ -462,7 +490,9 @@
     width: 100%;
     padding: 60px 0 100px 0;
     text-align: center;
-    background-color: rgba(252, 224, 239, 0.2);
+    background-color: var(--accent-bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
 }
   
 .newsletter__container {
@@ -479,7 +509,7 @@
 .newsletter__text {
     font-size: 16px;
     line-height: 1.5;
-    color: #555555;
+    color: var(--text-color);
     margin: 0 0 24px;
 }
   
@@ -495,9 +525,10 @@
     padding: 0 12px;
     font-size: 16px;
     line-height: 1;
-    border: 1px solid #cccccc;
-    background-color: #ffffff;
+    border: 1px solid var(--bg-color);
+    background-color: var(--bg-color);
     border-radius: 4px;
+    color: var(--text-color);
 }
   
 .newsletter__button {
@@ -506,7 +537,7 @@
     font-size: 16px;
     line-height: 1;
     background-color: #ED017F;
-    color: #ffffff;
+    color: var(--text-color);
     border: none;
     border-radius: 4px;
     cursor: pointer;
