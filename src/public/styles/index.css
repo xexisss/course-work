@@ -376,6 +376,7 @@
     width: 100%;
     padding: 60px 0 0 0;
     text-align: center;
+    padding-bottom: 100px;
 }
   
 .results__container {
@@ -412,6 +413,10 @@
     letter-spacing: 0;
     margin: 0 0 8px;
     font-size: 28px;
+}
+
+.results__item-title-colored {
+    color: #ED017F;
 }
   
 .results__item-desc {
