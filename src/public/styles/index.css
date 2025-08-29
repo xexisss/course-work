@@ -1,5 +1,9 @@
 /* Hero styles */
 
+/* * {
+    outline: 1px solid rgba(255,0,0,0.3);
+}*/
+
 .hero {
     width: 100%;
 }
@@ -166,7 +170,7 @@
 
 .partners {
     padding: 80px 24px;
-    background-color: #ffffff;
+    background-color: rgba(252, 224, 239, 0.2);
     text-align: center;
 }
   
@@ -233,7 +237,6 @@
 .glance {
     width: 100%;
     max-width: 1440px;
-    padding: 60px 0 0 0;
 }
   
 .glance__container {
@@ -358,6 +361,7 @@
   
 .services__link {
     display: block;
+    width: 254px;
     margin-top: 12px;
     font-size: 21px;
     letter-spacing: 1px;
