@@ -69,12 +69,25 @@ h1, h2 {
   font-weight: 700;
 }
 
+/* Variables */
+
+:root {
+  --bg-color: #fff;
+  --text-color: black;
+}
+
+[data-theme="dark"] {
+  --bg-color: rgb(47, 47, 47);
+  --text-color: #fff;
+}
+
 /* Header styles */
 
 .header {
   width: 100%;
   height: 72px;
-  background-color: white;
+  background-color: var(--bg-color);
+  transition: background-color 0.3s, color 0.3s;
 }
   
 .header__container {
@@ -102,7 +115,7 @@ h1, h2 {
   font-family: "Inter", sans-serif; 
   font-size: 20px;
   line-height: 20px;
-  color: black; 
+  color: var(--text-color); 
   text-decoration: none;
 }
   
@@ -113,8 +126,7 @@ h1, h2 {
 }
   
 .header_btn {
-  color: black;
-  background-color: gray;
+  color: var(--text-color);
   cursor: pointer;
   border: none;
   background: none;
@@ -158,7 +170,7 @@ h1, h2 {
   display: block;
   width: 24px;
   height: 2px;
-  background-color: rgb(0, 0, 0);
+  background-color: var(--text-color);
 }
 
 @media (max-width: 1024px) {
@@ -214,7 +226,7 @@ h1, h2 {
 /* Footer styles */
 
 .footer {
-  background-color: white;
+  background-color: var(--bg-color);
 }
   
 .footer__container {
@@ -269,7 +281,7 @@ h1, h2 {
 .footer__title {
   margin: 0 0 16px;
   font-size: 16px;
-  color: white;
+  color: var(--text-color);
 }
   
 .footer__list {
@@ -283,7 +295,7 @@ h1, h2 {
   
 .footer__list a {
   text-decoration: none;
-  color: black;
+  color: var(--text-color);
   font-size: 14px;
 }
   
@@ -294,8 +306,8 @@ h1, h2 {
 .footer__phone {
   align-self: center;
   justify-self: end;
-  background-color: black;
-  color: #ffffff;
+  background-color: var(--text-color);
+  color: var(--bg-color);
   border: none;
   padding: 12px 24px;
   font-size: 14px;
@@ -304,6 +316,6 @@ h1, h2 {
 }
   
 .footer__phone:hover {
-  background-color: black;
+  background-color: #ED017F;
 }
   
