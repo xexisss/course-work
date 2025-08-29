@@ -444,9 +444,9 @@
 
 .newsletter {
     width: 100%;
-    padding: 60px 0 0 0;
+    padding: 60px 0 100px 0;
     text-align: center;
-    background-color: #f8f8f8;
+    background-color: rgba(252, 224, 239, 0.2);
 }
   
 .newsletter__container {
@@ -489,7 +489,7 @@
     padding: 0 24px;
     font-size: 16px;
     line-height: 1;
-    background-color: #000000;
+    background-color: #ED017F;
     color: #ffffff;
     border: none;
     border-radius: 4px;
