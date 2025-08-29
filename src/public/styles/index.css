@@ -305,6 +305,7 @@
     width: 100%;
     padding: 60px 0 0 0;
     text-align: center;
+    background-color: rgba(252, 224, 239, 0.2);
 }
   
 .services__container {
@@ -333,11 +334,12 @@
   
 .services__item {
     text-align: center;
+    height: 457px;
 }
   
 .services__item img {
     display: block;
-    width: 100%;
+    width: 254px;
     height: auto;
     object-fit: cover;
 }
