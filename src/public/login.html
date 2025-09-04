@@ -43,12 +43,12 @@
     <main class="login-page">
         <div class="login__box">
           <h1 class="login__title">Login</h1>
-          <form class="login__form">
+          <form class="login__form" id="loginForm">
             <div class="login__field">
-              <label for="login-email" class="login__label">Email or nickname</label>
+              <label for="nickname" class="login__label">Email or nickname</label>
               <input
                 type="text"
-                id="login-email"
+                id="nickname"
                 class="login__input"
                 placeholder="Enter your email or nickname"
                 required
@@ -56,10 +56,10 @@
             </div>
     
             <div class="login__field">
-              <label for="login-password" class="login__label">Password</label>
+              <label for="password" class="login__label">Password</label>
               <input
                 type="password"
-                id="login-password"
+                id="password"
                 class="login__input"
                 placeholder="Enter your password"
                 required
@@ -68,6 +68,7 @@
     
             <button type="submit" class="login__button">Enter</button>
             <a href="register.html">Register</a>
+            <p id="loginMessage"></p>
           </form>
         </div>
     </main>
@@ -119,5 +120,6 @@
 
     <script src="js/components/theme.js"></script>
     <script src="js/components/header.js"></script>
+    <script src="js/pages/login.js"></script>
 </body>
 </html>
