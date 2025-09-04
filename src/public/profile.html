@@ -42,7 +42,17 @@
 
     <main class="profile-page">
         <div class="profile__box">
-          <h1 class="profile__title">Профиль</h1>
+          <h1 class="profile__title">Profile</h1>
+          
+          <div class="profile__info">
+            <p>Name: <span id="profile-name"></span></p>
+            <p>Nickname: <span id="profile-nickname"></span></p>
+            <p>Email: <span id="profile-email"></span></p>
+            <p>Phone: <span id="profile-phone"></span></p>
+          </div>
+
+          <button class="profile__logout" id="logoutBtn">Logout</button>
+
           <form class="profile__form" novalidate>
   
             <div class="profile__field">
@@ -60,7 +70,7 @@
               <label for="password-repeat" class="profile__label">New password*</label>
               <input
                 type="password"
-                id="password-repeat"
+                id="password-new"
                 class="profile__input"
                 placeholder="Repeat password"
                 required
