@@ -53,15 +53,15 @@
 
           <button class="profile__logout" id="logoutBtn">Logout</button>
 
-          <form class="profile__form" novalidate>
+          <form class="profile__form" id="passwordForm" novalidate>
   
             <div class="profile__field">
               <label for="password" class="profile__label">Password*</label>
               <input
                 type="password"
-                id="password"
+                id="password-old"
                 class="profile__input"
-                placeholder="Create password"
+                placeholder="Old password"
                 required
               />
             </div>
@@ -72,7 +72,7 @@
                 type="password"
                 id="password-new"
                 class="profile__input"
-                placeholder="Repeat password"
+                placeholder="New password"
                 required
               />
             </div>
@@ -90,6 +90,7 @@
     
             <button type="submit" class="profile__button">Register</button>
           </form>
+          <p id="passwordMessage"></p>
         </div>
       </main>
 
