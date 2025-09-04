@@ -14,15 +14,11 @@
 
 /* Calculator styles */
 
-body {
-
-}
-
 .calculator-page {
     display: flex;
     justify-content: center;  
     align-items: center;     
-    min-height: calc(100vh -  (/*высота header*/ 80px + /*высота footer*/ 120px));
+    min-height: calc(100vh -  (80px + 20px));
     background-color: var(--bg-color);
 }
   
