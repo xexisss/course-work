@@ -17,12 +17,12 @@
   
       <nav class="header__nav">
         <ul>
-          <li><a href="index.html#experience">Experience</a></li>
-          <li><a href="index.html#partners">Partners</a></li>
-          <li><a href="index.html#services">Services</a></li>
-          <li><a href="index.html#results">Results</a></li>
-          <li><a href="index.html#newsletter">Newsletter</a></li>
-          <button class="header_btn header_btn--eng">ENG</button>
+          <li><a href="index.html#experience" data-i18n="header.experience">Experience</a></li>
+          <li><a href="index.html#partners" data-i18n="header.partners">Partners</a></li>
+          <li><a href="index.html#services" data-i18n="header.services">Services</a></li>
+          <li><a href="index.html#results" data-i18n="header.results">Results</a></li>
+          <li><a href="index.html#newsletter" data-i18n="header.newsletter">Newsletter</a></li>
+          <button class="header_btn header_btn--eng" id="langToggle" data-lang="ru"></button>
         </ul>
       </nav>
 
@@ -138,23 +138,21 @@
   </section>
     
   <section class="partners" id="partners">
+    <button class="carousel__button carousel__button--left" aria-label="Prev slide">‹</button>
+    <h2 class="partners__title">BUSINESS PARTNERS</h2>
     <div class="partners__container">
-      <h2 class="partners__title">BUSINESS PARTNERS</h2>
-      <div class="partners__slider">
-        <div class="partners__item">
-          <img src="assets/Frame 1.png" alt="Partner 1" width="185px" height="110.36px">
-        </div>
-        <div class="partners__item">
-          <img src="assets/Frame 2.png" alt="Partner 2" width="185px" height="110.36px">
-        </div>
-        <div class="partners__item">
-          <img src="assets/Frame 3.png" alt="Partner 3" width="185px" height="110.36px">
-        </div>
-        <div class="partners__item">
-          <img src="assets/Frame 4.png" alt="Partner 4" width="185px" height="110.36px">
-        </div>
-      </div>
+      <ul class="partners__slider">
+        <li class="patrners__item"><img src="assets/Frame 1.png" alt="Partner 1" width="185px" height="110.36px"></li>
+        <li class="patrners__item"><img src="assets/Frame 2.png" alt="Partner 2" width="185px" height="110.36px"></li>
+        <li class="patrners__item"><img src="assets/Frame 3.png" alt="Partner 3" width="185px" height="110.36px"></li>
+        <li class="patrners__item"><img src="assets/Frame 4.png" alt="Partner 4" width="185px" height="110.36px"></li>
+        <li class="patrners__item"><img src="assets/Frame 5.png" alt="Partner 5" width="185px" height="110.36px"></li>
+        <li class="patrners__item"><img src="assets/Frame 6.jpg" alt="Partner 6" width="185px" height="110.36px"></li>
+      </ul>
     </div>
+    <button class="carousel__button carousel__button--right" aria-label="Next slide">›</button>
+    
+    <div class="carousel__nav"></div>
   </section>
     
   <section class="glance">
@@ -327,5 +325,7 @@
     <script src="js/pages/index.js"></script>
     <script src="js/components/theme.js"></script>
     <script src="js/components/header.js"></script>
+    <script src="js/components/i18n.js"></script>
+    <script src="js/components/lang.js"></script>
 </body>
 </html>
