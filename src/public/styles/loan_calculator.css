@@ -1,11 +1,27 @@
-.registration-page {
+/* Variables */
+
+:root {
+    --bg-color: #fff;
+    --text-color: black;
+    --accent-bg-color: rgba(252, 224, 239, 0.2);
+}
+  
+[data-theme="dark"] {
+    --bg-color: rgb(47, 47, 47);
+    --text-color: #fff;
+    --accent-bg-color: #A44979;
+}
+
+/* Calculator styles */
+
+.calculator-page {
     display: flex;
     justify-content: center;  
     align-items: center;     
     min-height: calc(100vh -  (/*высота header*/ 80px + /*высота footer*/ 120px));
 }
   
-.registration__box {
+.calculator__box {
     background-color: #000;
     width: 736px;
     height: 371px;
@@ -19,13 +35,13 @@
     margin-bottom: 100px;
 }
   
-.registration__title {
+.calculator__title {
     color: #fff;
     font-size: 32px;
     margin: 0 0 24px;
 }
   
-.registration__form {
+.calculator__form {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -33,20 +49,20 @@
     gap: 16px;
 }
   
-.registration__field {
+.calculator__field {
     width: 100%;
     max-width: 608px;
     display: flex;
     flex-direction: column;
 }
   
-.registration__label {
+.calculator__label {
     color: #fff;
     font-size: 14px;
     margin-bottom: 4px;
 }
   
-.registration__input {
+.calculator__input {
     width: 100%;
     height: 35px;
     padding: 4px 8px;
@@ -56,7 +72,7 @@
     box-sizing: border-box;
 }
   
-.registration__button {
+.calculator__button {
     width: 100%;
     max-width: 608px;
     height: 35px;
@@ -69,14 +85,14 @@
 }
   
 @media (max-width: 767px) {
-    .registration__box {
+    .calculator__box {
       width: 320px;
       height: 1051px;
       padding: 16px;
     }
   
-    .registration__field,
-    .registration__button {
+    .calculator__field,
+    .calculator__button {
       max-width: none;
       width: 100%;
     }
