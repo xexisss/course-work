@@ -537,7 +537,7 @@
     font-size: 16px;
     line-height: 1;
     background-color: #ED017F;
-    color: var(--text-color);
+    color: var(--bg-color);
     border: none;
     border-radius: 4px;
     cursor: pointer;
