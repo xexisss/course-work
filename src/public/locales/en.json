@@ -4,6 +4,66 @@
         "partners": "Partners",
         "services": "Services",
         "results": "Results",
-        "newsletter": "Newsletter"
+        "newsletter": "Newsletter",
+        "login": "Login"
+    },
+    "hero": {
+        "title": "Chase Your Dream with us",
+        "text": "The harder you work for something, the greater you’ll feel when you achieve it.",
+        "apply": "Apply online",
+        "loan": "Loan calculator"
+    },
+    "experience": {
+        "title": "Creating Extraordinary Customer Experience",
+        "subtitle": "Delivering Personalized Moments That Inspire Loyalty",
+        "support-title": "Fast support",
+        "solutions-title": "Custom Solutions",
+        "access-title": "24/7 Access",
+        "integration-title": "Seamless Integration",
+        "security-title": "Data Security",
+        "scalability-title": "Scalability",
+        "insights-title": "Analytics Insights",
+        "onboarding-title": "Personalized Onboarding",
+        "support": "Our support team responds to requests instantly and without delays. We are available 24/7 via chat, email and phone so that you always receive assistance at every stage. Forget about long waits and template answers. We solve your problems as quickly and efficiently as possible.",
+        "solutions": "We develop customized solutions that accurately reflect your business needs. Each project begins with detailed analysis and prototyping to take into account all your requirements. Using modern technologies and flexible methodologies, we create scalable and reliable systems. The resulting solution increases the efficiency of processes and accelerates the company's growth.",
+        "access": "You get round-the-clock access to all our services and data, regardless of your location. The platform works without interruptions, ensuring constant readiness and control over business processes. Automatic notifications inform you about important events instantly, and built-in analytics allows you to make decisions in real time. Take advantage of all the possibilities at any time of the day — without days off or delays.",
+        "integration": "Our platform seamlessly connects to any of your systems — CRM, ERP, mail services and BI tools. Flexible REST API and ready-made connectors allow you to start data exchange in a few clicks, without lengthy approvals and modifications. Integration takes place in the background, and you immediately see the results in your usual applications.",
+        "security": "We have secured every level of data handling: TLS encryption during transmission, AES-256 at rest, and multi-factor authentication. All processes comply with international standards ISO 27001 and GDPR, and regular audits and penetration tests ensure that your data is always under reliable protection.",
+        "scalability": "The system is designed on a cloud architecture with containerization and orchestration, so it scales smoothly to any number of users and data volume. As the load increases, resources are added automatically, without downtime. Your service remains fast and stable even during peak traffic periods.",
+        "insights": "Real data on customer behavior and process performance is available to you in interactive dashboards. Real-time metrics, customizable reports, and predictive models help you quickly identify bottlenecks, optimize strategy, and make decisions based on facts, not guesswork.",
+        "onboarding": "We offer each client an individual implementation plan: from business process audit to training your team. A personal manager and technical support specialists accompany you at every stage so that you start working with maximum capabilities in the first days after launch."
+    },
+    "partners": {
+        "partners": "Business partners"
+    },
+    "glance": {
+        "title": "IDPC AT A GLANCE",
+        "text": "IPDC AT A GLANCE IPDC Finance Limited (previously known as 'Industrial Promotion and Development Company of Bangladesh Limited') is the first private sector financial institution of the country established in 1981 by a distinguished group of shareholders namely International Finance Corporation (IFC), USA, German Investment and Development Company (DEG), Germany, The Aga Khan Fund for Economic Development (AKFED), Switzerland, Commonwealth Development Corporation (CDC), UK and the Government of Bangladesh"
+    },
+    "services": {
+        "title": "Our Services",
+        "subtitle": "Tailored Solutions, Real Results",
+        "saving": "IDPC saving schemes",
+        "loan": "IDPC Personal loan",
+        "deposit": "IDPC Deposit schemes",
+        "auto": "IDPC auto loan"
+    },
+    "results": {
+        "title": "Our best results for the year",
+        "subtitle": "Record-Breaking Achievements, Real Impact",
+        "first": "loan portfolio",
+        "second": "CLASSIFIED LOAN PORTFOLIO",
+        "third": "CLASSIFIED LOAN Coverage",
+        "forth": "Deposit",
+        "fifth": "Shareholders equity",
+        "six": "Capital Adequacy Ratio",
+        "seven": "Market Capitalization",
+        "eighth": "Credit Rating"
+    },
+    "newsletter": {
+        "title": "Newsletter",
+        "subtitle": "Fresh Insights, Exclusive Updates",
+        "email": "Your email",
+        "subscribe": "Subscribe"
     }
 }
