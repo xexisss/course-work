@@ -1,1 +1,15 @@
-{}
+{
+  "users": [
+    {
+      "id": "7891",
+      "surname": "Aboba",
+      "name": "Oleg",
+      "patronymic": "sadsa",
+      "birthdate": "0001-01-01",
+      "phone": "dasddas",
+      "email": "dasdasd",
+      "nickname": "nick",
+      "password": "1234"
+    }
+  ]
+}
