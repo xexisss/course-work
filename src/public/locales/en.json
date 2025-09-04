@@ -65,5 +65,38 @@
         "subtitle": "Fresh Insights, Exclusive Updates",
         "email": "Your email",
         "subscribe": "Subscribe"
+    },
+    "login": {
+        "title": "Login",
+        "email": "Email or nickname",
+        "email-input": "Enter your email or nickname",
+        "password": "Password",
+        "password-input": "Enter your password",
+        "enter": "Enter",
+        "register": "Register"
+    },
+    "register": {
+        "title": "Registration",
+        "surname": "Surname*",
+        "name": "Name*",
+        "patronymic": "Patronymic",
+        "date": "Date of birth*",
+        "number": "Phone number*",
+        "email": "E-mail*",
+        "nickname": "Nickname*",
+        "password": "Password*",
+        "repeat": "Repeat Password*",
+        "agree": "By registering you agree to the",
+        "agreement": "User Agreement",
+        "button": "Register",
+        "surname-enter": "Enter your surname",
+        "name-enter": "Enter your name",
+        "patronymic-enter": "Enter your patronymic",
+        "date-enter": "Enter your date of birth",
+        "number-enter": "Enter your phone number",
+        "email-enter": "Enter your E-mail",
+        "nickname-enter": "Enter your nickname",
+        "password-enter": "Enter your password",
+        "repeat-enter": "Repeat your password"
     }
 }

@@ -17,18 +17,18 @@
   
       <nav class="header__nav">
         <ul>
-          <li><a href="index.html#experience">Experience</a></li>
-          <li><a href="index.html#partners">Partners</a></li>
-          <li><a href="index.html#services">Services</a></li>
-          <li><a href="index.html#results">Results</a></li>
-          <li><a href="index.html#newsletter">Newsletter</a></li>
-          <button class="header_btn header_btn--eng">ENG</button>
+          <li><a href="index.html#experience" data-i18n="header.experience">Experience</a></li>
+          <li><a href="index.html#partners" data-i18n="header.partners">Partners</a></li>
+          <li><a href="index.html#services" data-i18n="header.services">Services</a></li>
+          <li><a href="index.html#results" data-i18n="header.results">Results</a></li>
+          <li><a href="index.html#newsletter" data-i18n="header.newsletter">Newsletter</a></li>
+          <button class="header_btn header_btn--eng" id="langToggle" data-lang="ru"></button>
         </ul>
       </nav>
 
       <div class="header__actions">
         <button class="header_btn header_btn--th" id="themeToggle">Th</button>
-        <button class="header_btn header_btn--login" id="loginButton">Login</button>
+        <button class="header_btn header_btn--login" id="loginButton" data-i18n="header.login">Login</button>
       </div>
 
       <button class="header__burger" aria-label="Открыть меню">
@@ -142,5 +142,7 @@
     <script src="js/components/theme.js"></script>
     <script src="js/components/header.js"></script>
     <script src="js/pages/profile.js"></script>
+    <script src="js/components/i18n.js"></script>
+    <script src="js/components/lang.js"></script>
 </body>
 </html>
