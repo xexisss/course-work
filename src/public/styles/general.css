@@ -245,8 +245,7 @@ body.accessible a,
 body.accessible button {
   padding: 0.75em 1em;
   outline: 3px solid #000;        
-  background: #ffd82a;            
-  color: #000 !important;         
+  background: #ffd82a;                    
 }
 
 body.accessible .header {
