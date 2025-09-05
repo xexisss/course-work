@@ -10,6 +10,17 @@
       "email": "dasdasd",
       "nickname": "nick",
       "password": "1111"
+    },
+    {
+      "id": "6a03",
+      "surname": "Ilya",
+      "name": "Sava",
+      "patronymic": "Petr",
+      "birthdate": "1111-01-01",
+      "phone": "3123123",
+      "email": "asdasdasd",
+      "nickname": "oleg",
+      "password": "1234"
     }
   ]
 }

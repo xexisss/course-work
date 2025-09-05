@@ -231,6 +231,80 @@ html{
   }
 }
 
+/* Header accessible version */
+
+body.accessible {
+  background: #ffffff;            
+  color: #000000;                 
+  font-family: Arial, sans-serif; 
+  font-size: 1.25em;              
+  line-height: 1.5;               
+}
+
+body.accessible a,
+body.accessible button {
+  padding: 0.75em 1em;
+  outline: 3px solid #000;        
+  background: #ffd82a;            
+  color: #000 !important;         
+}
+
+body.accessible .header {
+  color: #000000;
+  height: auto;
+  min-height: 90px;               
+  padding: 0 16px;
+}
+
+body.accessible .header__container {
+  max-width: 1440px;
+  padding: 0 32px;              
+}
+
+body.accessible .header__nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;                      
+  width: auto;                    
+}
+
+body.accessible .header__nav a {
+  font-size: 1.5em;               
+  line-height: 1.4;              
+  color: #000000;
+  text-decoration: underline;    
+}
+
+body.accessible .header__actions {
+  gap: 24px;                      
+}
+
+body.accessible .header_btn {
+  min-width: 60px;
+  min-height: 48px;            
+  font-size: 1.25em;          
+  line-height: 1.2;
+  border: 2px solid #000;
+  background: #ffd82a;
+  color: #000;
+}
+
+body.accessible .header_btn--th,
+body.accessible .header_btn--login,
+body.accessible .header_btn--eng {
+  padding: 0.5em 1em;
+}
+
+body.accessible .header__burger {
+  gap: 8px;                       
+}
+
+body.accessible .burger-line {
+  width: 32px;              
+  height: 4px;
+  background-color: #000000;
+}
+
 /* Footer styles */
 
 .footer {
@@ -326,4 +400,82 @@ html{
 .footer__phone:hover {
   background-color: #ED017F;
 }
+
+/* Footer accessible version */
+
+body.accessible .footer {
+  background-color: #ffffff;  
+  color: #000000;             
+  padding: 32px 0;            
+}
+
+body.accessible .footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;                   
+  padding: 64px 32px;         
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.skip-link {
+  position: absolute;
+  top: -60px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 12px;
+  z-index: 1000;
+  transition: top 0.3s;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+body.accessible .footer__title {
+  font-size: 1.5em;           
+  margin-bottom: 16px;
+  color: #000000;
+  line-height: 1.4;
+}
+
+body.accessible .footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;                  
+}
+
+body.accessible .footer__list a {
+  font-size: 1.25em;          
+  line-height: 1.4;
+  color: #000000;
+  text-decoration: underline;  
+  outline: 3px solid transparent;
+  padding: 4px 0;
+}
+body.accessible .footer__list a:focus,
+body.accessible .footer__list a:hover {
+  background-color: #ffd82a;   
+  outline-color: #000000;    
+}
+
+body.accessible .footer__phone {
+  font-size: 1.25em;        
+  line-height: 1.4;
+  padding: 0.75em 1.5em;    
+  background-color: #ffd82a;
+  color: #000000;
+  border: 2px solid #000000;  
+  border-radius: 4px;
+  outline: 3px solid transparent;
+  align-self: flex-start;
+}
+body.accessible .footer__phone:focus,
+body.accessible .footer__phone:hover {
+  background-color: #ed017f;   
+  color: #ffffff;
+  outline-color: #000000;
+}
+
   
