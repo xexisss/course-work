@@ -15,7 +15,7 @@
         <img src="assets/logo.png" alt="Logo" width="109" height="53"/>
       </a>
   
-      <nav class="header__nav">
+      <nav class="header__nav" id="header-nav">
         <ul>
           <li><a href="index.html#experience" data-i18n="header.experience">Experience</a></li>
           <li><a href="index.html#partners" data-i18n="header.partners">Partners</a></li>
@@ -27,12 +27,12 @@
       </nav>
 
       <div class="header__actions">
-        <button class="header_btn header_btn--th" id="themeToggle">Th</button>
+        <button class="header_btn header_btn--th" id="themeToggle"></button>
         <button class="header_btn header_btn--login" id="loginButton" data-i18n="header.login">Login</button>
         <button class="header_btn header_btn--sl" id="accessibilityToggle" area-pressed="false">👁</button>
       </div>
 
-      <button class="header__burger" aria-label="Открыть меню">
+      <button class="header__burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="header-nav">
           <span class="burger-line"></span>
           <span class="burger-line"></span>
           <span class="burger-line"></span>

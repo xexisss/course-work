@@ -28,3 +28,13 @@ function setMode(on) {
     } 
     localStorage.setItem('accessible', on);
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const burger = document.querySelector('.header__burger');
+  const header = document.querySelector('.header');
+
+  burger.addEventListener('click', () => {
+    const isOpen = header.classList.toggle('open');
+    burger.setAttribute('aria-expanded', String(isOpen));
+  });
+});
