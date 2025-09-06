@@ -5,5 +5,5 @@ loan_calculator_button.addEventListener('click', () => {
 
 const order_button = document.getElementById('order_button');
 order_button.addEventListener('click', () => {
-    window.location.href = '../order.html';
+    window.location.href = '../services.html';
 });

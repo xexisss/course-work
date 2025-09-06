@@ -43,11 +43,13 @@
 
     <main class="order-page">
       <div class="order__box">
-        <form action="" class="order__form">
+        <form action="" class="order__form" id="order-form">
+          <input type="hidden" name="serviceId" id="serviceId">
           <h1 class="order__title">Order</h1>
-          <button type="" class="order__button">Choose plan</button>
+          <p id="service-title"></p>
           <button type="submit" class="order__button">Order</button>
         </form>
+        <div id="message"></div>
       </div>
     </main>
 
@@ -100,5 +102,6 @@
     <script src="js/components/header.js"></script>
     <script src="js/components/i18n.js"></script>
     <script src="js/components/lang.js"></script>
+    <script src="js/pages/order.js"></script>
 </body>
 </html>
