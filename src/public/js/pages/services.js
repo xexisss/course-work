@@ -15,6 +15,14 @@ document.addEventListener('DOMContentLoaded', () => {
         <td>${service}</td>
         <td>${type}</td>
         <td>${percent}</td>
+        <td>
+          <a
+            href="order.html?serviceName=${service}"
+            class="services-table__order-btn"
+          >
+            Order
+          </a>
+        </td>
       `;
       tbody.append(tr);
     });
