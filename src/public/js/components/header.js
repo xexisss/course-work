@@ -1,6 +1,6 @@
 const loginButton = document.getElementById('loginButton');
 loginButton.addEventListener('click', () => {
-    window.location.href = '../login.html';
+    window.location.href = '../profile.html';
 });
 
 const accessibilityToggle = document.getElementById('accessibilityToggle');
