@@ -33,5 +33,27 @@
       "nickname": "admin",
       "password": "1111"
     }
+  ],
+  "services-list": [
+    {
+      "service": "Consumer loan",
+      "type": "loan",
+      "percent": "19.9"
+    },
+    {
+      "service": "Auto loan",
+      "type": "loan",
+      "percent": "40"
+    },
+    {
+      "service": "Stable income",
+      "type": "deposit",
+      "percent": "15.4"
+    },
+    {
+      "service": "Freedom of action",
+      "type": "deposit",
+      "percent": "0.2"
+    }
   ]
 }
