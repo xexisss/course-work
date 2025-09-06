@@ -44,31 +44,45 @@
     <main class="calculator-page">
       <div class="calculator__box">
         <h1 class="calculator__title">Loan Calculator</h1>
-        <form class="calculator__form" novalidate>
+
+        <form class="calculator__form" id="loan-form" novalidate>
           <div class="calculator__field">
-            <label for="surname" class="calculator__label">Loan amount</label>
+            <label for="amount" class="calculator__label">Loan amount</label>
             <input
-              type="text"
-              id="surname"
+              type="number"
+              id="amount"
+              name="amount"
+              min="1"
+              step="100"
               class="calculator__input"
-              placeholder="Enter loan amount"
               required
             />
           </div>
+    
           <div class="calculator__field">
-            <label for="surname" class="calculator__label">Loan term in month</label>
+            <label for="term" class="calculator__label">Loan term in month</label>
             <input
-              type="text"
-              id="surname"
+              type="number"
+              id="term"
+              name="term"
+              min="1"
+              step="1"
               class="calculator__input"
-              placeholder="Enter loan term in month"
               required
             />
           </div>
-          <button type="" class="calculator__button">Desired plan</button>
-          
-          <button type="submit" class="calculator__button">Calculate</button>
+    
+          <div class="calculator__field">
+            <label for="plan" class="calculator__label">Choose plan</label>
+            <select id="plan" name="plan" required class="calculator__input">
+              <option value="">Загрузка…</option>
+            </select>
+          </div>
+    
+          <button class="calculator__button" type="submit">Calculate</button>
         </form>
+    
+        <div id="result" class="result"></div>
       </div>
     </main>
 
@@ -122,5 +136,6 @@
     <script src="js/components/header.js"></script>
     <script src="js/components/i18n.js"></script>
     <script src="js/components/lang.js"></script>
+    <script src="js/pages/loan_calculator.js"></script>
 </body>
 </html>

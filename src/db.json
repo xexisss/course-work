@@ -1,5 +1,6 @@
 {
-  "users": [{
+  "users": [
+    {
       "id": "7891",
       "surname": "Aboba",
       "name": "Oleg",
@@ -33,32 +34,34 @@
       "password": "1111"
     }
   ],
-  "services-list": [{
+  "services-list": [
+    {
       "id": "1",
       "service": "Consumer loan",
       "type": "loan",
-      "percent": "19.9"
+      "percent": 0.199
     },
     {
       "id": "2",
       "service": "Auto loan",
       "type": "loan",
-      "percent": "40"
+      "percent": 0.4
     },
     {
       "id": "3",
       "service": "Stable income",
       "type": "deposit",
-      "percent": "15.4"
+      "percent": 0.154
     },
     {
       "id": "4",
       "service": "Freedom of action",
       "type": "deposit",
-      "percent": "0.2"
+      "percent": 0.002
     }
   ],
-  "orders": [{
+  "orders": [
+    {
       "id": "f083",
       "serviceId": 1,
       "userId": "1"
@@ -70,6 +73,11 @@
     },
     {
       "id": "afc6",
+      "serviceId": 2,
+      "userId": "1"
+    },
+    {
+      "id": "505e",
       "serviceId": 2,
       "userId": "1"
     }
