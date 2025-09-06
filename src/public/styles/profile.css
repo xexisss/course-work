@@ -25,7 +25,7 @@
 .profile__box {
     background-color: #A44979;
     width: 736px;
-    height: 471px;
+    min-height: 471px;
     padding: 24px;
     display: flex;
     flex-direction: column;
@@ -92,6 +92,11 @@
 
 .profile__logout {
     margin-bottom: 25px;
+}
+
+#container {
+    margin-top: 32px;
+    color: var(--text-color);
 }
   
 @media (max-width: 767px) {

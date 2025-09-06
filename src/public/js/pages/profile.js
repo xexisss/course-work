@@ -17,6 +17,18 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('profile-nickname').textContent  = user.nickname;
         document.getElementById('profile-email').textContent     = user.email || '—';
         document.getElementById('profile-phone').textContent     = user.phone || '—';
+        
+        if(user.id === "1") {
+            fetch('/users').then(res => res.json()).then(users => {
+                let ul = document.createElement('ul');
+                users.forEach(u => {
+                    const li = document.createElement('li');
+                    li.textContent = `${u.id}: ${u.nickname} (${u.email})`;
+                    ul.append(li);
+                });
+                document.getElementById('container').append(ul);
+            });
+        }
     }).catch(err => {
         console.error(err);
         window.location.href = 'login.html';

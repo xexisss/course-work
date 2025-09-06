@@ -21,6 +21,17 @@
       "email": "asdasdasd",
       "nickname": "oleg",
       "password": "1234"
+    },
+    {
+      "id": "1",
+      "surname": "admin",
+      "name": "admin",
+      "patronymic": "admin",
+      "birthdate": "1111-01-01",
+      "phone": "admin",
+      "email": "asdasdasd",
+      "nickname": "admin",
+      "password": "1111"
     }
   ]
 }
