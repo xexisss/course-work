@@ -121,5 +121,12 @@
         "repeat-password": "Повторите новый пароль",
         "repeat-password-enter": "Повторите новый пароль",
         "submit": "Поменять пароль"
+    },
+    "calculator": {
+        "title": "Кредитный калькулятор",
+        "amount": "Сумма кредита",
+        "term": "Срок кредита в месяцах",
+        "plan": "Choose plan",
+        "calculate": "Рассчитатьe"
     }
 }

@@ -121,5 +121,12 @@
         "repeat-password": "Repeat new password",
         "repeat-password-enter": "Repeat password",
         "submit": "Change password"
+    },
+    "calculator": {
+        "title": "Loan calculator",
+        "amount": "Loan amount",
+        "term": "Loan term in month",
+        "plan": "Choose plan",
+        "calculate": "Calculate"
     }
 }
