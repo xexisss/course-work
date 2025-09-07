@@ -98,5 +98,13 @@
         "nickname-enter": "Введите ваш ник",
         "password-enter": "Введите пароль",
         "repeat-enter": "Повторите пароль"
+    },
+    "footer": {
+        "company": "Компания",
+        "location": "Как нас найти",
+        "products": "Продукты",
+        "services": "Наши услуги",
+        "support": "Поддержка",
+        "help": "Центр помощи"
     }
 }

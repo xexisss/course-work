@@ -98,5 +98,13 @@
         "nickname-enter": "Enter your nickname",
         "password-enter": "Enter your password",
         "repeat-enter": "Repeat your password"
+    },
+    "footer": {
+        "company": "Company",
+        "location": "Where are we located",
+        "products": "Products",
+        "services": "Services",
+        "support": "Support",
+        "help": "Help Center"
     }
 }
