@@ -106,5 +106,20 @@
         "services": "Services",
         "support": "Support",
         "help": "Help Center"
+    },
+    "profile": {
+        "title": "Profile",
+        "name": "Name",
+        "nick": "Nickname",
+        "email": "Email",
+        "phone": "Phone",
+        "logout": "Logout",
+        "password": "Password",
+        "password-enter": "Old password",
+        "new-password": "New password",
+        "new-password-enter": "New password",
+        "repeat-password": "Repeat new password",
+        "repeat-password-enter": "Repeat password",
+        "submit": "Change password"
     }
 }

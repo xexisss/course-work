@@ -44,53 +44,56 @@
 
     <main class="profile-page">
         <div class="profile__box">
-          <h1 class="profile__title">Profile</h1>
+          <h1 class="profile__title" data-i18n="profile.title">Profile</h1>
           
           <div class="profile__info">
-            <p>Name: <span id="profile-name"></span></p>
-            <p>Nickname: <span id="profile-nickname"></span></p>
-            <p>Email: <span id="profile-email"></span></p>
-            <p>Phone: <span id="profile-phone"></span></p>
+            <p><span data-i18n="profile.name"></span>: <span id="profile-name"></span></p>
+            <p><span data-i18n="profile.nick"></span>: <span id="profile-nickname"></span></p>
+            <p><span data-i18n="profile.email"></span>: <span id="profile-email"></span></p>
+            <p><span data-i18n="profile.phone"></span>: <span id="profile-phone"></span></p>
           </div>
 
-          <button class="profile__logout" id="logoutBtn">Logout</button>
+          <button class="profile__logout" id="logoutBtn" data-i18n="profile.logout">Logout</button>
 
           <form class="profile__form" id="passwordForm" novalidate>
   
             <div class="profile__field">
-              <label for="password" class="profile__label">Password*</label>
+              <label for="password" class="profile__label" data-i18n="profile.password">Password*</label>
               <input
                 type="password"
                 id="password-old"
                 class="profile__input"
                 placeholder="Old password"
+                data-i18n="profile.password-enter"
                 required
               />
             </div>
     
             <div class="profile__field">
-              <label for="password-repeat" class="profile__label">New password*</label>
+              <label for="password-repeat" class="profile__label" data-i18n="profile.new-password">New password*</label>
               <input
                 type="password"
                 id="password-new"
                 class="profile__input"
                 placeholder="New password"
                 required
+                data-i18n="profile.new-password-enter"
               />
             </div>
 
             <div class="profile__field">
-                <label for="password-repeat" class="profile__label">Repeat new password*</label>
+                <label for="password-repeat" class="profile__label" data-i18n="profile.repeat-password">Repeat new password*</label>
                 <input
                   type="password"
                   id="password-repeat"
                   class="profile__input"
                   placeholder="Repeat password"
                   required
+                  data-i18n="profile.repeat-password-enter"
                 />
               </div>
     
-            <button type="submit" class="profile__button">Register</button>
+            <button type="submit" class="profile__button" data-i18n="profile.submit">Register</button>
           </form>
           <p id="passwordMessage"></p>
           <div id="container"></div>

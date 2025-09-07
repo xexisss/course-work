@@ -106,5 +106,20 @@
         "services": "Наши услуги",
         "support": "Поддержка",
         "help": "Центр помощи"
+    },
+    "profile": {
+        "title": "Профиль",
+        "name": "Имя",
+        "nick": "Ник",
+        "email": "Email",
+        "phone": "Номер телефона",
+        "logout": "Выйти",
+        "password": "Пароль",
+        "password-enter": "Старый пароль",
+        "new-password": "Новый пароль",
+        "new-password-enter": "Новый парль",
+        "repeat-password": "Повторите новый пароль",
+        "repeat-password-enter": "Повторите новый пароль",
+        "submit": "Поменять пароль"
     }
 }
