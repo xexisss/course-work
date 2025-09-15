@@ -408,6 +408,11 @@ body.accessible .ce-item-text {
   }
 }
 
+.partners__title {
+  width: 100%;
+  text-align: center;
+}
+
 
 /* IDPC AT A GLANCE Styles */
 
@@ -615,6 +620,7 @@ body.accessible .glance__image img {
 .services__item {
   text-align: center;
   height: 457px;
+  margin: 0 auto;
 }
 
 .services__item img {
