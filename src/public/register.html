@@ -55,6 +55,7 @@
                 placeholder="Enter your surname"
                 required
                 data-i18n="register.surname-enter"
+                pattern="^[А-Яа-яЁё\s\-]+$"
               />
             </div>
     
@@ -67,6 +68,7 @@
                 placeholder="Enter your name"
                 required
                 data-i18n="register.name-title"
+                pattern="^[А-Яа-яЁё\s\-]+$"
               />
             </div>
     
@@ -78,6 +80,7 @@
                 class="registration__input"
                 placeholder="Enter your patronymic"
                 data-i18n="register.patronymic-enter"
+                pattern="^[А-Яа-яЁё\s\-]+$"
               />
             </div>
     
@@ -113,6 +116,7 @@
                 placeholder="you@example.com"
                 required
                 data-i18n="register.email-title"
+                pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
               />
             </div>
     
@@ -149,6 +153,7 @@
                 placeholder="Repeat password"
                 required
                 data-i18n="register.repeat-enter"
+                pattern="^\+375\d{9}$"
               />
             </div>
     

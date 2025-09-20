@@ -32,6 +32,28 @@
       "email": "asdasdasd",
       "nickname": "admin",
       "password": "1111"
+    },
+    {
+      "id": "4108",
+      "surname": "вфывыф13213",
+      "name": "312312",
+      "patronymic": "выфв3131в",
+      "birthdate": "0002-02-01",
+      "phone": "+375",
+      "email": "вфывыф2dasd",
+      "nickname": "фщииф",
+      "password": "12345"
+    },
+    {
+      "id": "1316",
+      "surname": "31231",
+      "name": "Артём",
+      "patronymic": "000",
+      "birthdate": "0002-02-02",
+      "phone": "+375",
+      "email": "вфыв",
+      "nickname": "мубуу",
+      "password": "123456"
     }
   ],
   "services-list": [

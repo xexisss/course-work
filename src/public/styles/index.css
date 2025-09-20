@@ -373,6 +373,7 @@ body.accessible .ce-item-text {
   display: flex;
   gap: 32px;
   transition: transform .3s ease;
+  text-align: center;
 }
 
 .patrners__item {
@@ -411,6 +412,8 @@ body.accessible .ce-item-text {
 .partners__title {
   width: 100%;
   text-align: center;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 
@@ -695,7 +698,7 @@ body.accessible .glance__image img {
 }
 
 .results__item {
-  text-align: left;
+  text-align: center;
 }
 
 .results__item-title {

@@ -28,6 +28,23 @@ form.addEventListener('submit', async e => {
         return;
     }
 
+    const nameRegex  = /^[А-Яа-яЁё\s\-]+$/;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const phoneRegex = /^\+375\d{9}$/;
+
+    if (!nameRegex.test(user.surname) || !nameRegex.test(user.name)) {
+        msg.textContent = 'Registration error';
+        return;    
+    }
+    if (!emailRegex.test(user.email)) {
+        msg.textContent = 'Registration error';
+        return;    
+    }
+    if (!phoneRegex.test(user.phone)) {
+        msg.textContent = 'Registration error';
+        return;    
+    }
+
     try {
         let res = await fetch(`http://localhost:3000/users?nickname=${user.nickname}`);
         let exists = await res.json();
