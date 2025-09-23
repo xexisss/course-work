@@ -2,6 +2,10 @@ const form = document.getElementById('registerForm');
 const msg = document.getElementById('message');
 const dobInput   = document.getElementById('phone');
 
+msg.style.backgroundColor = "white";
+msg.style.padding = "3px";
+msg.style.borderRadius = "3px";
+
 const today      = new Date();
 const yyyy       = today.getFullYear();
 const mm         = String(today.getMonth() + 1).padStart(2, '0');
@@ -55,12 +59,12 @@ form.addEventListener('submit', async e => {
     const age = calculateAge(birthdate, today);
 
     if (age < 16) {
-        msg.style.color = 'white';
-        msg.textContent = 'Вам должно быть не менее 18 лет';
+        msg.style.color = 'red';
+        msg.textContent = 'Вам должно быть не менее 16 лет';
         return;
     }
     if (age > 120) {
-        msg.style.color = 'white';
+        msg.style.color = 'red';
         msg.textContent = 'Проверьте, правильно ли указана дата.';
         return;
     }
@@ -71,17 +75,17 @@ form.addEventListener('submit', async e => {
     const phoneRegex = /^\+375\d{9}$/;
 
     if (!nameRegex.test(user.surname) || !nameRegex.test(user.name) || nameRegex2.test(user.surname) || nameRegex2.test(user.surname)) {
-        msg.style.color = 'white';
+        msg.style.color = 'red';
         msg.textContent = 'Имя и фамилия должны состоять только из символов';
         return;    
     }
     if (!emailRegex.test(user.email)) {
-        msg.style.color = 'white';
+        msg.style.color = 'red';
         msg.textContent = 'Неверный E-mail';
         return;    
     }
     if (!phoneRegex.test(user.phone)) {
-        msg.style.color = 'white';
+        msg.style.color = 'red';
         msg.textContent = 'Неверный номер телефона';
         return;    
     }
@@ -109,6 +113,6 @@ form.addEventListener('submit', async e => {
     }   
     catch (err) {
         console.error(err);
-        msg.textContent = 'Registration error';
+        msg.textContent = 'Ошибка регистрации';
     }
 });
