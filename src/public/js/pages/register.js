@@ -54,13 +54,13 @@ form.addEventListener('submit', async e => {
     const birthdate = new Date(user.birthdate);
     const age = calculateAge(birthdate, today);
 
-    if (age < 18) {
-        msg.style.color = 'red';
+    if (age < 16) {
+        msg.style.color = 'white';
         msg.textContent = 'Вам должно быть не менее 18 лет';
         return;
     }
     if (age > 120) {
-        msg.style.color = 'red';
+        msg.style.color = 'white';
         msg.textContent = 'Проверьте, правильно ли указана дата.';
         return;
     }
@@ -71,17 +71,17 @@ form.addEventListener('submit', async e => {
     const phoneRegex = /^\+375\d{9}$/;
 
     if (!nameRegex.test(user.surname) || !nameRegex.test(user.name) || nameRegex2.test(user.surname) || nameRegex2.test(user.surname)) {
-        msg.style.color = 'red';
+        msg.style.color = 'white';
         msg.textContent = 'Имя и фамилия должны состоять только из символов';
         return;    
     }
     if (!emailRegex.test(user.email)) {
-        msg.style.color = 'red';
+        msg.style.color = 'white';
         msg.textContent = 'Неверный E-mail';
         return;    
     }
     if (!phoneRegex.test(user.phone)) {
-        msg.style.color = 'red';
+        msg.style.color = 'white';
         msg.textContent = 'Неверный номер телефона';
         return;    
     }
