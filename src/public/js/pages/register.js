@@ -1,5 +1,26 @@
 const form = document.getElementById('registerForm');
 const msg = document.getElementById('message');
+const dobInput   = document.getElementById('phone');
+
+const today      = new Date();
+const yyyy       = today.getFullYear();
+const mm         = String(today.getMonth() + 1).padStart(2, '0');
+const dd         = String(today.getDate()).padStart(2, '0');
+
+const maxDate    = `${yyyy}-${mm}-${dd}`;
+const minDate    = `${yyyy - 120}-${mm}-${dd}`;
+
+dobInput.setAttribute('max', maxDate);
+dobInput.setAttribute('min', minDate);
+
+function calculateAge(birth, today) {
+    let age = today.getFullYear() - birth.getFullYear();
+    const m  = today.getMonth() - birth.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birth.getDate())) {
+      age--;
+    }
+    return age;
+}
 
 form.addEventListener('submit', async e => {
     e.preventDefault();
@@ -19,12 +40,28 @@ form.addEventListener('submit', async e => {
 
     if (!user.surname || !user.name || !user.birthdate || !user.phone || !user.email
         || !user.nickname || !user.password) {
-        msg.textContent = 'Please fill in the required fields';
+        msg.style.color = 'red';
+        msg.textContent = 'Пожалуйста, заполните обязательные поля(*)';
         return;
     }
 
     if (user.password !== user.passwordRepeat) {
-        msg.textContent = 'The passwords do not match';
+        msg.style.color = 'red';
+        msg.textContent = 'Пароли не совпадают';
+        return;
+    }
+
+    const birthdate = new Date(user.birthdate);
+    const age = calculateAge(birthdate, today);
+
+    if (age < 18) {
+        msg.style.color = 'red';
+        msg.textContent = 'Вам должно быть не менее 18 лет';
+        return;
+    }
+    if (age > 120) {
+        msg.style.color = 'red';
+        msg.textContent = 'Проверьте, правильно ли указана дата.';
         return;
     }
 
@@ -39,11 +76,13 @@ form.addEventListener('submit', async e => {
         return;    
     }
     if (!emailRegex.test(user.email)) {
-        msg.textContent = 'Registration error';
+        msg.style.color = 'red';
+        msg.textContent = 'Неверный E-mail';
         return;    
     }
     if (!phoneRegex.test(user.phone)) {
-        msg.textContent = 'Registration error';
+        msg.style.color = 'red';
+        msg.textContent = 'Неверный номер телефона';
         return;    
     }
 
