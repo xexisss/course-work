@@ -29,11 +29,13 @@ form.addEventListener('submit', async e => {
     }
 
     const nameRegex  = /^[А-Яа-яЁё\s\-]+$/;
+    const nameRegex2  = /^[A-Za-z\s\-]+$/;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const phoneRegex = /^\+375\d{9}$/;
 
-    if (!nameRegex.test(user.surname) || !nameRegex.test(user.name)) {
-        msg.textContent = 'Registration error';
+    if (!nameRegex.test(user.surname) || !nameRegex.test(user.name) || nameRegex2.test(user.surname) || nameRegex2.test(user.surname)) {
+        msg.style.color = 'red';
+        msg.textContent = 'Имя и фамилия должны состоять только из символов';
         return;    
     }
     if (!emailRegex.test(user.email)) {
